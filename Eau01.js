@@ -1,6 +1,6 @@
 
 
-let concatNumber = (letter, cumul) => cumul + letter;
+let concatNumber = (inputCarac, inputCumul) => inputCumul + inputCarac;
 
 let arrayToString = (myArray) => {
     //on transforme le tableau en chaine ['1','0','2'] devient '102'
@@ -20,7 +20,7 @@ let combinaisonExist = (inputCombinaison, inputArrNumbers) => {
     }
 };
 
-function nbOccurence(inputStringNumber) {
+let nbOccurence = (inputStringNumber) => {
     //Pour un chiffre, on contrôle si il y a des nombres identique
     let stringToArray = inputStringNumber.split('');
     let nbOccurence = 0;
@@ -38,7 +38,7 @@ function nbOccurence(inputStringNumber) {
     }
 };
 
-function addValidString000To999() {
+let addValidString000To999 = () => {
     //on ajoute dans un tableau, les chiffre de 1 à 999 au format '001'
     //on exclut les chiffres ayant plus de 2 nombres identiques, exemple : 002
     let arrayNumbers = new Array;
