@@ -1,7 +1,9 @@
 
 //permet de contrôler si pour deux valeurs exemple 00 et 99 existe sous format :
 // 00 99 OU 99 00
-function combinaisonExists(value1, value2, array) {
+
+let combinaisonExists = (value1, value2, array) => {
+
   var returnVal = false;
   var ind;
   for (ind = 0; ind < array.length; ind++) {
@@ -11,6 +13,7 @@ function combinaisonExists(value1, value2, array) {
     }
   }
   return returnVal;
+  
 };
 
 let addValidString00To99 = () => {
