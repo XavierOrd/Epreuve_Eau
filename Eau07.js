@@ -9,6 +9,7 @@ let isValidInput = (inputArgs) => {
         //si on trouve un chiffre c'est pas bon 
         for (let j = 0; j < sentence.length; j++) {
             if (sentence[j] === " ") {
+                //on ne contrôle pas les espaces 
                 continue
             }
             if ( !isNaN(sentence[j]) ) {
@@ -72,8 +73,6 @@ let formateSentence = (inputArgs) => {
     let letterFormated = "" 
     let counter=0
     
-    
-
     for (let j = 0; j < inputSentence.length; j++) {
 
         counter++ //sinon on commence à 0 et 0 est pair alors qu'on est sur la lettre 1 
