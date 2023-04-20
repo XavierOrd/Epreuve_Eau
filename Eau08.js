@@ -6,16 +6,10 @@ Un symbole d’espace: inclut les espaces, les tabulations \t, les sauts de lign
 // let myString = "Hello\tworld!\nThis is a test string.";
 // myString = "b9onjour mathilde, comment vas-tu ?!";
 
-/* const regexpDigit = /\d/;
 
-for (let i = 0; i < myString.length; i++) {
-    if (myString[i].match(regexpDigit)) {
-        console.log("Error")
-    }
-} */
 
 let isValidInput = (inputArgs) => {
-    
+
     let inputParam = inputArgs[0]
 
     if ((inputParam == undefined) || (!isNaN(inputParam))) {
